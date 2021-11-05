@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/PglRobot
-RUN git clone -b shiken https://github.com/iisgaurav/PglRobot /root/PglRobot
-WORKDIR /root/PglRobot
+# Copy Python Requirements to /root/LegendRobot
+RUN git clone -b Legendary https://github.com/LEGEND-OS/The-LegendRobot /root/LegendRobot
+WORKDIR /root/LegendRobot
 
 #Copy config file to /root/PglRobot/PglRobot
-COPY ./PglRobot/sample_config.py ./PglRobot/config.py* /root/PglRobot/PglRobot/
+COPY ./LegendRobot/sample_config.py ./LegendRobot/config.py* /root/The-LegendRobot/LegendRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","PglRobot"]
+CMD ["python3","-m","LegendRobot"]
