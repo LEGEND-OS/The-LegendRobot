@@ -1,4 +1,4 @@
 @echo off
-TITLE PglRobot
-:: Enables virtual env mode and then starts PglRobot
-env\scripts\activate.bat && py -m PglRobot
+TITLE LegendRobot
+:: Enables virtual env mode and then starts LegendRobot
+env\scripts\activate.bat && py -m LegendRobot
