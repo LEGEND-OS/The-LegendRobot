@@ -1,3 +1,18 @@
+# Config files, logs and stuff
+PglRobot/modules/helper_funcs/temp.txt
+PglRobot/elevated_users.json
+PglRobot/config.py
+PglRobot/config.ini
+log.txt
+kangsticker.png
+updates.txt
+
+# Session files
+PglRobot/*.session
+PglRobot/*.session-journal
+PglRobot.session-journal
+*.session
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +142,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS code and shit
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
